@@ -1,0 +1,245 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-left: 80px;
+}
+
+.logo{
+    width: 100px;
+}
+
+.listitems{
+list-style: none;
+display: inline;
+margin: 0px 20px;
+}
+
+.links{
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+.links:hover{
+    text-decoration: underline;
+    color: red;
+}
+.home-content{
+    margin: 13% 0px 0px 8%;
+}
+#username{
+    font-family: "Playwrite HU", cursive;
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#lname{
+    font-family: "Playwrite HU", cursive;
+    color: rgb(117, 188, 117);
+
+}
+#homedetails{
+    line-height: 1.5;
+}
+#homebutton{
+    text-decoration: none;
+    color: white;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 30px;
+}
+.home-img{
+    width: 45%;
+    height: 65%;
+    position: absolute;
+    right: 30px;
+    bottom: 0px;
+}
+.group1{
+    position: absolute;
+    height: 100%;
+    bottom: 0px;
+    left: 50% ;
+    transform: translateX(-50%);
+    transition: bottom 2s,left 1s;
+}
+.home-img:hover #shape{
+    bottom: 70px;
+}
+.home-img:hover #girl{
+    left: 35%;
+}
+
+#about{
+    margin: 25% 0px 0px 10%;
+}
+
+.sectionhead{
+    text-align: center;
+}
+.mainhead{
+    font-size:35px;
+    color: rgb(117, 188, 117);
+}
+.subhead{
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+.aboutbody{
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+.imgabt{
+    width: 80%;
+}
+.aboutcontent{
+    font-size: 20px;
+    text-align: justify;
+    margin-right: 20px;
+}
+.information{
+    margin-top: 1.3rem;
+}
+.inforbox{
+    margin-bottom: 10px;
+}
+.inforbox>span{
+    margin-left: 1rem;
+}
+#skill{
+    margin: 8% 0px 0px 8%;
+}
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+    margin-top: 20px;
+}
+.bars{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 50px;
+}
+.barHead,.barPercent{
+    font-weight: 500;
+    font-size: 1.3rem;
+}
+.baseBar{
+    width: 100%;
+    height: 0.3rem;
+    background-color: black;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0px;
+}
+.portBar{
+     width: 93%;
+    background-color: rgb(107, 188, 66);
+}
+.landBar{
+     width: 83%;
+    background-color: rgb(107, 188, 66);
+
+}
+.editBar{
+     width: 91%;
+    background-color: rgb(107, 188, 66);
+}
+.wildBar{
+     width: 87%;
+    background-color: rgb(107, 188, 66);
+}
+#contact{
+    margin: 8% 8% 0px 8%;
+}
+.iconCollection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.icon{
+    /* border: solid; */
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 10px;
+}
+.brands{
+    color: black;
+    font-size: 2rem;
+}
+
+.icon:hover{
+    background-image: linear-gradient(to bottom right,rgb(107, 188, 66),white);
+}
+.icon:hover .brands{
+    color: white;
+    animation: rotate 3s;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(30deg);
+    }
+     20%{
+        transform: rotate(-30deg);
+    }
+     40%{
+        transform: rotate(30deg);
+    }
+     60%{
+        transform: rotate(-30deg);
+    }
+     80%{
+        transform: rotate(30deg);
+    }
+     100%{
+        transform: rotate(-30deg);
+    }
+}
+footer{
+    margin-top: 5%;
+}
+#copyright{
+    text-align: center;
+    font-weight: 600;
+}
+.upArrow{
+    float: right;
+    margin: -40px 20px 20px 0px;
+}
+html{
+    scroll-behavior: smooth ;
+}
+::-webkit-scrollbar{
+    width: 10px;
+     border-radius: 15px;
+}
+::-webkit-scrollbar-track{
+    background-color: bisque;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgb(107, 188, 66) ;
+}
